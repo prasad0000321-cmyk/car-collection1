@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Car Collection</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=80") no-repeat center;
+    background-size:cover;
+    height:450px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.hero h2{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+    font-size:40px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cars{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px 0;
+}
+
+.card p{
+    padding:0 15px 20px;
+    text-align:center;
+    color:#555;
+}
+
+button{
+    display:block;
+    margin:0 auto 20px;
+    padding:10px 20px;
+    background:#111;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:orange;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Luxury Car Collection</h1>
+    <p>Explore the World's Best Cars</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Cars</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Drive Your Dream</h2>
+</section>
+
+<div class="container">
+
+<h2>Featured Cars</h2>
+
+<div class="cars">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Ferrari">
+<h3>Ferrari</h3>
+<p>Italian supercar with outstanding speed and performance.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80" alt="Lamborghini">
+<h3>Lamborghini</h3>
+<p>Luxury sports car known for its aggressive styling.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="BMW">
+<h3>BMW</h3>
+<p>Premium German engineering with comfort and power.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="Mercedes">
+<h3>Mercedes-Benz</h3>
+<p>Luxury sedan offering elegance, safety, and innovation.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Audi">
+<h3>Audi</h3>
+<p>Modern luxury car with advanced technology and style.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80" alt="Porsche">
+<h3>Porsche</h3>
+<p>Legendary sports car with incredible driving experience.</p>
+<button>View Details</button>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 Luxury Car Collection | Designed with HTML & CSS</p>
+</footer>
+
+</body>
+</html>	
